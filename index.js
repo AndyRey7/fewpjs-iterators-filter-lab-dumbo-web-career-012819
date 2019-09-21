@@ -3,8 +3,11 @@ const findMatching = (array, drivers) => {
   return array.filter(driver => driver.toLowerCase() === drivers.toLowerCase())
 }
 
-const fuzzyMatch = (drivers, string) => {
-  let lengthOfName = string.length;
+const fuzzyMatch = (drivers, dname) => {
+  let lengthOfName = dname.length;
   return drivers.filter(driver => driver.slice(0, lengthOfName) === string)
 }
 
+const matchName = (drivers, dname) => {
+  return drivers.filter(driver => driver.name === dname)
+}
