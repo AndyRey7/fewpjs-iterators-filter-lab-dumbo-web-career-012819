@@ -1,2 +1,4 @@
 // Code your solution here
-const findMatching = (array, drivers)
+const findMatching = (array, drivers) => {
+  array.filter(driver => driver.name)
+}
