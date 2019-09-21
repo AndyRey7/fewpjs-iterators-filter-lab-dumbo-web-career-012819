@@ -4,5 +4,5 @@ const findMatching = (array, drivers) => {
 }
 
 const fuzzyMatch = (drivers, string) => {
-  return drivers.filter(driver.indexOf(0) === string)
+  return drivers.filter(driver => driver.indexOf(0) === string)
 }
