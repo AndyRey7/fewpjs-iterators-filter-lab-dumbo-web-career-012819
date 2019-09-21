@@ -1,4 +1,4 @@
 // Code your solution here
 const findMatching = (array, drivers) => {
-  array.filter(driver => driver.toLowerCase)
+  return array.filter(driver => driver.toLowerCase() === drivers)
 }
