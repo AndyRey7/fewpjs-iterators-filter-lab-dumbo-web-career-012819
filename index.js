@@ -7,3 +7,4 @@ const fuzzyMatch = (drivers, string) => {
   let lengthOfName = string.length;
   return drivers.filter(driver => driver.slice(0, lengthOfName) === string)
 }
+
