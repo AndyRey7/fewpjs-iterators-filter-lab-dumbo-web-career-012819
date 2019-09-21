@@ -5,7 +5,7 @@ const findMatching = (array, drivers) => {
 
 const fuzzyMatch = (drivers, dname) => {
   let lengthOfName = dname.length;
-  return drivers.filter(driver => driver.slice(0, lengthOfName) === string)
+  return drivers.filter(driver => driver.slice(0, lengthOfName) === dname)
 }
 
 const matchName = (drivers, dname) => {
